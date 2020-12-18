@@ -2,15 +2,17 @@
 <template>
   <q-page class="Login" padding>
     <!-- back button -->
-    <router-link to="/Auth">
-      <q-btn
-        class="back"
-        style="color:#737373"
-        :ripple="false"
-        icon="keyboard_backspace"
-        flat
-      ></q-btn
-    ></router-link>
+    <div class="header">
+      <router-link to="/Auth">
+        <q-btn
+          class="back"
+          style="color:#737373"
+          :ripple="false"
+          icon="keyboard_backspace"
+          flat
+        ></q-btn
+      ></router-link>
+    </div>
     <!-- main content -->
     <div class="main">
       <!-- <img
@@ -28,12 +30,12 @@
       <h4>Login</h4>
 
       <div class="input-section">
-        <q-input color="" v-model="text" label="Email">
+        <q-input color="" v-model="text" label="Email" type="email">
           <template v-slot:prepend>
-            <q-icon name="account_box" />
+            <q-icon name="email" />
           </template>
         </q-input>
-        <q-input color="" v-model="text" label="Password">
+        <q-input color="" v-model="text" label="Password" type="password">
           <template v-slot:prepend>
             <q-icon name="lock" />
           </template>
@@ -103,6 +105,13 @@ export default {
 </script>
 <style lang="scss" scoped>
 .Login {
+  .header {
+    position: sticky;
+    // margin-top: 50px;
+    height: 40px;
+    // position: fixed;
+    top: 50px;
+  }
   .main {
     display: flex;
     flex-direction: column;
