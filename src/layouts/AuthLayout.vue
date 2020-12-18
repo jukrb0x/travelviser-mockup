@@ -23,6 +23,7 @@
 </template>
 
 <script>
+import { Platform } from 'quasar'
 export default {
   // name: 'LayoutName',
 
@@ -51,5 +52,6 @@ a {
 
 .bg {
   background: #fafafa;
+  padding-top: 100px;
 }
 </style>
