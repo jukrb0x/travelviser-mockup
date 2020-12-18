@@ -4,7 +4,7 @@
     <div class="main">
       <img class="logo" src="~assets/travelviser-logo.png" width="80%" alt="" />
       <div class="caption">
-        <span class="header text-h5">Less Waiting, More Time.</span>
+        <span class="header text-h5">{{ slogan }}</span>
         <span class="text"
           >To use the app, please check whether<br />
           your institution is using Travelviser Passenger Services.</span
@@ -41,7 +41,8 @@ export default {
   // name: 'PageName',
   data() {
     return {
-      btnSize: "md"
+      btnSize: "md",
+      slogan: "Less Waiting, More Time."
     };
   }
 };
