@@ -5,6 +5,7 @@ const routes = [{
             import ("layouts/MainLayout.vue"),
         children: [{
             path: "Home",
+            redirect: '/Main',
             component: () =>
                 import ("pages/Index.vue")
         }]
@@ -16,17 +17,50 @@ const routes = [{
         children: [{
                 path: "",
                 component: () =>
-                    import ("pages/Auth.vue")
+                    import ("pages/Auth/Auth.vue")
             },
             {
                 path: "/Login",
                 component: () =>
-                    import ("pages/Login.vue")
+                    import ("pages/Auth/Login.vue")
             },
             {
                 path: "/Register",
                 component: () =>
-                    import ("pages/Register.vue")
+                    import ("pages/Auth/Register.vue")
+            },
+            {
+                path: "/Verify",
+                component: () =>
+                    import ("pages/Auth/Verify.vue")
+            },
+
+        ]
+    },
+    {
+        path: "/Main",
+        redirect: "/qrcode",
+        component: () =>
+            import ("layouts/HomeLayout.vue"),
+        children: [{
+                path: "/qrcode",
+                component: () =>
+                    import ("pages/Main/Qrcode.vue")
+            },
+            {
+                path: "/maps",
+                component: () =>
+                    import ("pages/Main/Maps.vue")
+            },
+            {
+                path: "/bookings",
+                component: () =>
+                    import ("pages/Main/Bookings.vue")
+            },
+            {
+                path: "/profile",
+                component: () =>
+                    import ("pages/Main/Profile.vue")
             },
 
         ]
