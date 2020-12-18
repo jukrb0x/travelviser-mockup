@@ -1,10 +1,19 @@
 <!-- Mockup for login page -->
 <template>
-  <q-layout>
-    <q-page-container class="bg">
-      <q-page class="Login">
-        <div class="main">
-          <img
+  <q-page class="Login" padding>
+    <!-- back button -->
+    <router-link to="/Auth">
+      <q-btn
+        class="back"
+        style="color:#737373"
+        :ripple="false"
+        icon="keyboard_backspace"
+        flat
+      ></q-btn
+    ></router-link>
+    <!-- main content -->
+    <div class="main">
+      <!-- <img
             src="~assets/xmum-logo.png"
             width="90%"
             class="uni-logo"
@@ -15,61 +24,69 @@
             class="uni-gate"
             alt=""
             width="25%"
-          />
-          <div class="input-section">
-            <q-input color="" v-model="text" label="Campus ID">
-              <template v-slot:prepend>
-                <q-icon name="account_box" />
-              </template>
-            </q-input>
-            <q-input color="" v-model="text" label="Password">
-              <template v-slot:prepend>
-                <q-icon name="lock" />
-              </template>
-            </q-input>
+          /> -->
+      <h4>Login</h4>
 
-            <!-- login button -->
-            <q-btn
-              class="login"
-              @click="confirm = true"
-              outline
-              rounded
-              color="primary"
-              label="Sign in"
-            />
-          </div>
-          <!-- sign in pop-up -->
-          <q-dialog v-model="confirm" persistent>
-            <q-card>
-              <q-card-section>
-                <div class="text-h6">
-                  Alert
-                </div>
-              </q-card-section>
+      <div class="input-section">
+        <q-input color="" v-model="text" label="Email">
+          <template v-slot:prepend>
+            <q-icon name="account_box" />
+          </template>
+        </q-input>
+        <q-input color="" v-model="text" label="Password">
+          <template v-slot:prepend>
+            <q-icon name="lock" />
+          </template>
+        </q-input>
 
-              <q-card-section class="q-pt-none">
-                By signing in, you are agree to our privac policy & disclaimer.
-              </q-card-section>
+        <!-- login button -->
+        <q-btn
+          class="login"
+          @click="confirm = true"
+          rounded
+          color="primary"
+          label="Login"
+        />
 
-              <q-card-actions align="right">
-                <q-btn flat label="Deny" color="red" v-close-popup />
-                <router-link to="/">
-                  <q-btn flat label="Login" color="primary" v-close-popup />
-                </router-link>
-              </q-card-actions>
-            </q-card>
-          </q-dialog>
-        </div>
-        <!-- bottom buttons -->
-        <div class="footer">
+        <q-btn class="forget" flat color="primary">Forget your password?</q-btn>
+
+        <span class="register-now"
+          >Don't have an account?
+          <router-link to="/Register" class="text-primary"
+            >Register now</router-link
+          ></span
+        >
+      </div>
+      <!-- sign in pop-up -->
+      <q-dialog v-model="confirm" persistent>
+        <q-card>
+          <q-card-section>
+            <div class="text-h6">
+              Alert
+            </div>
+          </q-card-section>
+
+          <q-card-section class="q-pt-none">
+            By signing in, you are agree to our privac policy & disclaimer.
+          </q-card-section>
+
+          <q-card-actions align="right">
+            <q-btn flat label="Deny" color="red" v-close-popup />
+            <router-link to="/Home">
+              <q-btn flat label="Login" color="primary" v-close-popup />
+            </router-link>
+          </q-card-actions>
+        </q-card>
+      </q-dialog>
+    </div>
+    <!-- bottom buttons -->
+    <!-- <div class="footer">
           <div class="bottom">
             <q-btn flat color="primary" icon="description" />
             <q-btn flat color="primary" icon="help_outline" />
           </div>
-        </div>
-      </q-page>
-    </q-page-container>
-  </q-layout>
+        </div> -->
+  </q-page>
 </template>
 <script>
 export default {
@@ -85,23 +102,11 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-// get rid of link underline
-a {
-  text-decoration: none;
-}
-
-.router-link-active {
-  text-decoration: none;
-}
-
-.bg {
-  background: #fafafa;
-}
 .Login {
   .main {
     display: flex;
     flex-direction: column;
-    padding: 150px 20px 0 20px;
+    padding: 100px 20px 0 20px;
 
     .uni-logo {
       align-self: center;
@@ -113,6 +118,7 @@ a {
     }
 
     .input-section {
+      margin-top: 35px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -121,7 +127,15 @@ a {
         align-self: center;
         margin-top: 20px;
         // width: min-content;
-        width: 100px;
+        width: 200px;
+      }
+
+      .forget {
+        margin-top: 10px;
+      }
+      .register-now {
+        align-self: center;
+        color: #737373;
       }
     }
   }
