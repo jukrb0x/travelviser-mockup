@@ -1,5 +1,7 @@
 <template>
-  <q-layout view="hHh Lpr fFf"> <!-- Be sure to play with the Layout demo on docs -->
+  <q-layout view="hHh Lpr fFf">
+    <!-- <q-layout view="hHh Lpr fFf" container style="overflow-y:scroll;-webkit-overflow-scrolling:touch"> -->
+    <!-- Be sure to play with the Layout demo on docs -->
 
     <!-- (Optional) The Header -->
     <!-- <q-header class="text-primary bg">
@@ -17,25 +19,29 @@
     <q-page-container>
       <!-- This is where pages get injected -->
       <router-view />
-    </q-page-container class="bg">
-
+    </q-page-container>
   </q-layout>
 </template>
 
 <script>
-import { Platform } from 'quasar'
+import { Platform } from "quasar";
 export default {
   // name: 'LayoutName',
 
-  data () {
+  data() {
     return {
       leftDrawer: true
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="scss">
+// prevent dialog scroll
+.q-body--prevent-scroll {
+  position: -webkit-sticky !important;
+}
+
 // get rid of link underline
 a {
   text-decoration: none;
@@ -43,15 +49,10 @@ a {
 }
 
 .back {
-    margin-top: 15px;
-  }
+  margin-top: 15px;
+}
 
 .router-link-active {
   text-decoration: none;
-}
-
-.bg {
-  background: #fafafa;
-  padding-top: 100px;
 }
 </style>
