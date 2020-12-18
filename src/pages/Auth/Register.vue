@@ -84,18 +84,20 @@
         <q-card>
           <q-card-section>
             <div class="text-h6">
-              Alert
+              Reminder
             </div>
           </q-card-section>
 
           <q-card-section class="q-pt-none">
-            By signing in, you are agree to our privac policy & disclaimer.
+            Please register using the email address provided by your
+            institution. A verification code for activation will be sent to that
+            address.
           </q-card-section>
 
           <q-card-actions align="right">
-            <q-btn flat label="Deny" color="red" v-close-popup />
-            <router-link to="/Home">
-              <q-btn flat label="Login" color="primary" v-close-popup />
+            <q-btn flat label="Cancel" color="red" v-close-popup />
+            <router-link to="/Verify">
+              <q-btn flat label="Proceed" color="primary" v-close-popup />
             </router-link>
           </q-card-actions>
         </q-card>
