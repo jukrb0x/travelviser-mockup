@@ -1,22 +1,25 @@
-# Quasar App (xmux-mockup)
+# Travelviser Mock-up
 
-A Quasar Framework app
+A Quasar Framework app, mock-up of Travelviser Passenger.
 
 ## Install the dependencies
+
 ```bash
 yarn
 ```
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
+
 ```bash
 quasar dev
 ```
 
-
 ### Build the app for production
+
 ```bash
 quasar build
 ```
 
 ### Customize the configuration
+
 See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
