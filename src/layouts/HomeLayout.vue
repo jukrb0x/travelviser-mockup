@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="hHh LpR fFf">
+  <q-layout view="hHh LpR fFf" class="scrolling-trouble">
     <!-- Be sure to play with the Layout demo on docs -->
 
     <!-- (Optional) The Header -->
@@ -62,14 +62,19 @@ export default {
 
 <style lang="scss">
 // prevent dialog scroll
-.q-body--prevent-scroll {
-  position: -webkit-sticky !important;
-}
+// .q-body--prevent-scroll {
+//   position: -webkit-sticky !important;
+// }
 
 .tab {
   padding-bottom: 12px;
 }
+.scrolling-trouble {
+  overflow-y: hidden !important;
+  height: 1px;
+}
 .head {
   padding: 40px 10px 0 10px;
+  overflow-y: hidden !important;
 }
 </style>
