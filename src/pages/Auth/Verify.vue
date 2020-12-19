@@ -22,7 +22,7 @@
           >Please check your email and key in the 6-digit verification code
           here.</span
         >
-        <q-input color="" v-model="text" label="Verification Code" type="email">
+        <q-input color="" v-model="vcode" label="Verification Code" type="tel">
           <template v-slot:prepend>
             <q-icon name="vpn_key" />
           </template>
@@ -85,7 +85,7 @@ export default {
   data() {
     return {
       confirm: false,
-      isPwd: true
+      vcode: ""
     };
   },
   computed: {},

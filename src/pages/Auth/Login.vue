@@ -30,12 +30,12 @@
       <h4>Login</h4>
 
       <div class="input-section">
-        <q-input color="" v-model="text" label="Email" type="email">
+        <q-input color="" v-model="email" label="Email" type="email">
           <template v-slot:prepend>
             <q-icon name="email" />
           </template>
         </q-input>
-        <q-input color="" v-model="text" label="Password" type="password">
+        <q-input color="" v-model="password" label="Password" type="password">
           <template v-slot:prepend>
             <q-icon name="lock" />
           </template>
@@ -96,7 +96,9 @@ export default {
   props: {},
   data() {
     return {
-      confirm: false
+      confirm: false,
+      email: "",
+      password: ""
     };
   },
   computed: {},

@@ -16,11 +16,10 @@
     <!-- main content -->
     <div class="main">
       <h4>Register</h4>
-      <!-- FIXME: data binding -->
       <div class="input-section">
         <q-input
           color=""
-          v-model="text"
+          v-model="email"
           label="Email"
           type="email"
           hint="Please using the email provided by your institution"
@@ -30,13 +29,13 @@
           </template>
         </q-input>
 
-        <q-input color="" v-model="text" label="Name">
+        <q-input color="" v-model="name" label="Name">
           <template v-slot:prepend>
             <q-icon name="account_box" />
           </template>
         </q-input>
 
-        <q-input color="" v-model="text" label="Student ID">
+        <q-input color="" v-model="stuid" label="Student ID">
           <template v-slot:prepend>
             <q-icon name="fingerprint" />
           </template>
@@ -44,7 +43,7 @@
 
         <q-input
           color=""
-          v-model="text"
+          v-model="password"
           label="Password"
           type="password"
           :type="isPwd ? 'password' : 'text'"
@@ -119,8 +118,11 @@ export default {
   data() {
     return {
       confirm: false,
-      isPwd: true
-      // TODO: data binding
+      isPwd: true,
+      email: "",
+      name: "",
+      stuid: "",
+      password: ""
     };
   },
   computed: {},
