@@ -64,12 +64,12 @@ export default {
 .tab {
   padding-bottom: 12px;
 }
-.scrolling-trouble {
-  overflow-y: hidden !important;
-  height: 1px;
-}
+// .scrolling-trouble {
+//   overflow-y: hidden !important;
+//   height: 1px;
+// }
 .head {
   padding: 40px 10px 0 10px;
-  overflow-y: hidden !important;
+  // overflow-y: hidden !important;
 }
 </style>
