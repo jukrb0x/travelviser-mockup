@@ -1,4 +1,4 @@
-# :palm_tree: Travelviser Mock-up
+# :bus::palm_tree: Travelviser Mock-up
 
 A Quasar Framework app, mock-up of Travelviser Passenger.
 
@@ -48,3 +48,13 @@ quasar build
 ### :gear: Customize the configuration
 
 See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
+
+
+
+# :bird: To-do
+
+*I probably won’t take action on these to-dos*
+
+- [ ] Body lock (v-body-lock) for layout implement
+- [ ] Maps components
+- [ ] Bookings function
