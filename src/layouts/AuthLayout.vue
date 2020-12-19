@@ -37,17 +37,7 @@ export default {
 </script>
 
 <style lang="scss">
-// get rid of link underline
-a {
-  text-decoration: none;
-  // color: black;
-}
-
 .back {
   margin-top: 15px;
-}
-
-.router-link-active {
-  text-decoration: none;
 }
 </style>

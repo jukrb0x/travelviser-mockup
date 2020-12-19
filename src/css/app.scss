@@ -4,3 +4,12 @@
 // .q-body--prevent-scroll {
 //     position: -webkit-sticky !important;
 // }
+// get rid of link underline
+a {
+    text-decoration: none;
+    // color: black;
+}
+
+.router-link-active {
+    text-decoration: none;
+}
