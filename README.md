@@ -2,7 +2,7 @@
 
 A Quasar Framework app, mock-up of Travelviser Passenger.
 
-This repository is for the coursework of Human Computer Interaction, building a mockup user interface for a poor design app named Travelviser Passenger. 
+This repository is for the coursework of Human Computer Interaction, building a mockup user interface for a poor design app named Travelviser Passenger.
 
 :warning: **Reminder:** This project is for academic use only and no commercial use is permitted.
 
@@ -28,21 +28,22 @@ quasar dev
 
 ### iOS
 
+Build with Capacitor, don't use Cordova.
+
 ```shell
-quasar dev -m ios
-quasar dev -m ios -e iPhone-11 # specify the model
+quasar dev -m capacitor -T ios
 ```
 
 ### Android
 
 ```shell
-quasar dev -m android
+quasar dev -m capacitor -T android
 ```
 
 ### Build
 
 ```bash
-quasar build
+quasar build -m capacitor -T [ios|android]
 ```
 
 ### :gear: Customize the configuration
@@ -60,7 +61,7 @@ See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
 
 # :bird: To-do
 
-*I probably won’t take action on these to-dos*
+_I probably won’t take action on these to-dos_
 
 - [ ] Body lock (v-body-lock) for layout implement
 - [ ] Maps components
