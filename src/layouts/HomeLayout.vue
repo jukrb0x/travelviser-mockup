@@ -61,11 +61,6 @@ export default {
 </script>
 
 <style lang="scss">
-// prevent dialog scroll
-// .q-body--prevent-scroll {
-//   position: -webkit-sticky !important;
-// }
-
 .tab {
   padding-bottom: 12px;
 }

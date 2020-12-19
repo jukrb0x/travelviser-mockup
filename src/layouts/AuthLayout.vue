@@ -37,11 +37,6 @@ export default {
 </script>
 
 <style lang="scss">
-// prevent dialog scroll
-// .q-body--prevent-scroll {
-//   position: -webkit-sticky !important;
-// }
-
 // get rid of link underline
 a {
   text-decoration: none;

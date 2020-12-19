@@ -1,1 +1,5 @@
 // app global css in SCSS form
+// prevent dialog blank space
+.q-body--prevent-scroll {
+    position: -webkit-sticky !important;
+}
