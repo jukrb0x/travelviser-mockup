@@ -63,6 +63,9 @@ See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
 
 _I probably won’t take action on these to-dos_
 
-- [ ] Body lock (v-body-lock) for layout implement
+- [x] Body lock (v-body-lock) for layout implement
+
+  > since Capacitor being used, temporary no need for it
+
 - [ ] Maps components
 - [ ] Bookings function
