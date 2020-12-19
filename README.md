@@ -49,6 +49,17 @@ quasar build
 
 See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
 
+# :iphone: Screenshots
+
+<center>
+<img src="public/screenshots/welcome.png" width="230"  />
+<img src="public/screenshots/login.png" width="230" />
+<img src="public/screenshots/reg.png" width="230" />
+<img src="public/screenshots/qr.png" width="230" />
+<img src="public/screenshots/booking.png" width="230" />
+<img src="public/screenshots/profile.png" width="230" />
+</center>
+
 # :bird: To-do
 
 *I probably won’t take action on these to-dos*
