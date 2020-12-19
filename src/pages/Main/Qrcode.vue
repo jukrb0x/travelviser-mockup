@@ -15,7 +15,7 @@
     </div>
 
     <div class="qrcode">
-      <img width="110%" src="~assets/qrcode.png" alt="" />
+      <img width="100%" src="~assets/qrcode.png" alt="" />
     </div>
     <div class="info">
       <span class="name text-h6"
@@ -64,11 +64,13 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
 .info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 </style>

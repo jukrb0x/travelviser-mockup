@@ -2,7 +2,11 @@
 
 A Quasar Framework app, mock-up of Travelviser Passenger.
 
+This repository is for the coursework of Human Computer Interaction 
+
 ## Getting started
+
+### Install dependencies
 
 ```bash
 yarn
