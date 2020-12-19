@@ -1,0 +1,12 @@
+{
+  "name": "xmux-mockup",
+  "version": "0.0.1",
+  "description": "A Quasar Framework app",
+  "author": "jukrb0x <15688641+jukrb0x@users.noreply.github.com>",
+  "private": true,
+  "dependencies": {
+    "@capacitor/cli": "^2.0.0",
+    "@capacitor/core": "^2.0.0",
+    "@capacitor/ios": "2.4.4"
+  }
+}
