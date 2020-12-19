@@ -6,7 +6,7 @@ This repository is for the coursework of Human Computer Interaction, building a 
 
 :warning: **Reminder:** This project is for academic use only and no commercial use is permitted.
 
-:copyright: License by [Apache-2.0 License](https://github.com/jukrb0x/travelviser-mockup/blob/master/LICENSE)
+:copyright: Licensed under [Apache-2.0 License](https://github.com/jukrb0x/travelviser-mockup/blob/master/LICENSE)
 
 ## :rocket: Getting started
 
