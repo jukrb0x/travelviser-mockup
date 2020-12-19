@@ -1,10 +1,14 @@
-# Travelviser Mock-up
+# :palm_tree: Travelviser Mock-up
 
 A Quasar Framework app, mock-up of Travelviser Passenger.
 
-This repository is for the coursework of Human Computer Interaction 
+This repository is for the coursework of Human Computer Interaction, building a mockup user interface for a poor design app named Travelviser Passenger. 
 
-## Getting started
+:warning: **Reminder:** This project is for academic use only and no commercial use is permitted.
+
+:copyright: License by [Apache-2.0 License](https://github.com/jukrb0x/travelviser-mockup/blob/master/LICENSE)
+
+## :rocket: Getting started
 
 ### Install dependencies
 
@@ -41,6 +45,6 @@ quasar dev -m android
 quasar build
 ```
 
-### Customize the configuration
+### :gear: Customize the configuration
 
 See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
