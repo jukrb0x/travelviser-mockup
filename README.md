@@ -57,6 +57,7 @@ See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
 <div align="center">
 <img src="public/screenshots/qr.png" width="230" /><img src="public/screenshots/booking.png" width="230" /><img src="public/screenshots/profile.png" width="230" />
 </div>
+
 # :bird: To-do
 
 *I probably won’t take action on these to-dos*
