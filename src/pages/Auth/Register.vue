@@ -16,7 +16,7 @@
     <!-- main content -->
     <div class="main">
       <h4>Register</h4>
-
+      <!-- FIXME: data binding -->
       <div class="input-section">
         <q-input
           color=""
@@ -120,6 +120,7 @@ export default {
     return {
       confirm: false,
       isPwd: true
+      // TODO: data binding
     };
   },
   computed: {},
