@@ -25,6 +25,10 @@ H5(spa), iOS, Android, Electron...
 ```bash
 quasar dev
 ```
+or
+```bash
+quasar -m h5
+```
 
 ### iOS
 
