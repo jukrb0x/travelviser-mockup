@@ -1,7 +1,7 @@
 {
   "name": "xmux-mockup",
   "version": "0.0.1",
-  "description": "A Quasar Framework app",
+  "description": "HCI coursework, a mock-up of a poor design app named travelviser",
   "productName": "Quasar App",
   "author": "jukrb0x <15688641+jukrb0x@users.noreply.github.com>",
   "private": true,
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "quasar": "^1.0.0",
     "vue-i18n": "^8.0.0"
