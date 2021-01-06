@@ -65,7 +65,7 @@ See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
 
 # :bird: To-do
 
-_I probably won’t take action on these to-dos_
+_I probably won’t take action on these to-dos recently._
 
 - [x] Body lock (v-body-lock) for layout implement
 
